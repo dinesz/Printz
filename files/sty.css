@@ -1,0 +1,43 @@
+#global_nav {height:38px; /* margin-top:20px; */
+}
+
+.nav {font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif; display:block;}
+.nav ul {list-style: none; margin: 0; padding: 0; position: relative; }
+.nav ul li {float: left; /* position: relative; */ background:#fff; margin-right:1px; border-radius:4px 4px 0 0;}
+.nav ul li:hover,
+.nav ul li.hover {z-index: 1000000000000000000;}
+
+.nav ul a {text-decoration: none; display: block;   /* position: relative; */ padding: 10px; background:#eaebeb; color:#333; border-radius:5px 5px 0 0; }
+.nav ul a:hover,
+.nav ul a:focus,
+.nav ul a:active,
+.nav ul li.active a,
+.nav ul li.hover a {background:#fff; color:#900;}
+
+/* Dropdown */
+.nav ul ul {position: absolute; top: 38px; left: -9999em; width: 930px; /* overflow:hidden; */ padding:10px; background:#fff; border-radius:0 0 5px 5px; box-shadow:0 3px 3px rgba(0,0,0,0.3);}
+.nav ul li:hover ul,
+.nav ul li.hover ul {left: 0;}
+.nav ul ul li {float: none; position: static; padding:0; margin:0 0 .5em 0;}
+.nav ul li:hover ul a,
+.nav ul li.hover ul a {text-shadow: none; margin-top: -1px; /* collapses top border */ padding:0; color:#0e4e8e; line-height:1.2; background:transparent; }
+.nav ul li:hover ul a:hover,
+.nav ul li.hover ul a:hover,
+.nav ul li.hover ul a:focus,
+.nav ul li.hover ul a:active {color:#900;}
+
+
+.nav ul ul ul {position: relative;  width: 930px; margin-top:0; /* overflow:hidden; */ display:none; /*padding:10px;*/ background:#fff; border-radius:0 0 5px 5px;box-shadow:0 3px 3px rgba(0,0,0,0.3);}
+.nav ul li:hover ul li:hover > ul {display: block; }  
+.nav ul ul ul li.hover {z-index: 2000000000000000000;}
+.nav ul li ul li ul li a {whitewhite-space: nowrap; line-height:25px;}  
+
+
+.nav ul li + ul {
+  float: left;
+  /* margin-bottom: 1em; */
+  margin-right: 20px;
+  /* min-height: 100px; */
+  overflow: hidden;
+  width: 150px;
+}

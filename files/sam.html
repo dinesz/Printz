@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        alert($("div").data("", "Hi"));
+    });
+    $("#btn2").click(function(){
+        alert($("div").data("","hello"));
+    });
+    $("#btn3").click(function(){
+        alert($("div").data("","hello"));
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">one</button><br>
+<button id="btn2">two</button>
+<button id="btn3">three</button>
+<div></div>
+
+</body>
+</html>
